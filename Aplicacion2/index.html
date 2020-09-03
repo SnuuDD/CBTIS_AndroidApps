@@ -1,0 +1,337 @@
+ <!doctype html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Segunda Aplicacion</title>
+ 
+  <!--grupo CSS -->
+  <link rel="stylesheet" href="css/temasapp2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+<body onLoad="MM_preloadImages('imagenes/7.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>Semana Santa en México </h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <center>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Semana SAnta','','imagenes/7.jpg',1)"><img src="imagenes/1.jpg" width="80%" height="60%" id="Semana SAnta"></a>
+  </center>
+  </div>
+  
+  <div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>¿Que es la Semana Santa?</h2>
+  <p>♠</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Religiones que celebran la Semana Santa</h2>
+  <p>♣</p>
+  </a>
+  </li>
+    
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  Semana Santa en Atlixco
+  <p>♦</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Semana Santa en Puebla</h2>
+  <p>◘</p>
+  </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+ <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Celebración en la Delegacion de Iztapalapa</h2>
+  <p>¶</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Semana Santa en San Luis Potosi</h2>
+  <p>☻</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Semana Santa en Guerrero</h2>
+  <p>♫</p>
+  </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Semana Santa en Oaxaca</h2>
+  <p>☼</p>
+  </a>
+  </li>
+  </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="a">
+  <div>
+  <br>
+  <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion Dos</h4>
+  <h4>Luis Jesus Morales Juarez</h4>
+  </div>
+  </div>
+  </div>
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Que es la Semana Santa?</h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h2>¿Que es la Semana Santa?</h2>
+  <h4>La Semana Santa es la conmemoración anual cristiana de la Pasión, Muerte y Resurrección de Jesús de Nazaret.</h4>
+  <center><img src="imagenes/2.jpg" width="50%" height="50%"></center> 
+  <h4>Por eso, es un período de intensa actividad litúrgica dentro de las diversas confesiones cristianas. Da comienzo el Domingo de Ramos y finaliza el Domingo de Resurrección, aunque su celebración suele iniciarse en varios lugares el viernes anterior (Viernes de Dolores) y se considera parte de la misma el Domingo de Resurrección</h4>
+  <center><img src="imagenes/3.jpg" width="50%" height="50%"></center>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Luis Jesús Morales Juárez</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Religiones que celebran la Semana Santa</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Religiones que celebran la Semana Santa</h2></div>
+ <h3>Cristianos</h3>
+ <h4>Para los miembros de la iglesia cristiana evangélica, la Semana Santa es el tiempo para recordar la muerte de Cristo. Para conmemorarla, se congregan en una jornada de oración y adoración, la cual inicia el Jueves Santo a las 9:00 de la noche y se extiende por 24 horas. 
+<br>
+En esta reunión se dan cita grupos artísticos y musicales, ya que los cristianos creen que “Dios habita en medio de la alabanza”. Además, para ellos es fundamental la vigilia, es decir, pasar una noche en vela y adorando a Dios.</h4>
+<center><img src="imagenes/logo1.png" width="50%" height="50%"></center>
+<h3>Pentecostales</h3>
+ <h4>La celebración de la Semana Santa para los pentecostales inicia el jueves a las dos de la tarde con un desfile, en el cual reparten volantes, entonan canciones e invitan a toda la comunidad a congregarse en una reunión que tiene lugar en su centro de culto a las seis de la tarde. 
+<BR>
+Una vez allí en el templo, dan apertura a la fiesta denominada ‘Levántate, hoy es el día de tu salvación’. En este acto se efectúan bautizos, y llevan a cabo cuatro cultos o reuniones especiales. 
+</h4>
+<center><img src="imagenes/logo2.JPG" width="50%" height="50%"></center>
+<h3>Adventistas</h3>
+ <h4>En el sentir de los adventistas, la Semana Santa es la conmemoración de la pasión de Cristo; sin embargo, los seis días los trabajan normalmente, además, no tienen prohibición para ingerir alimentos, aunque tienden a ser vegetarianos. 
+<BR>
+“Nosotros nos ceñimos a la Biblia y en ella no dice en ninguna parte que debemos descansar; lo que se señala allí es que hay que descansar antes de la preparación, es decir, el viernes. </h4>
+<center><img src="imagenes/logo3.png" width="50%" height="50%"></center>
+<h3>Testigos de Jehova</h3>
+ <h4>Los Testigos de Jehová consideran que la Semana Mayor es una fecha común; ellos celebran anualmente la muerte de Jesús, pero lo hacen según el calendario arameo. En dicha reunión comparten vino y pan, tal como lo hizo el Señor en la última cena. 
+<br>
+“Nosotros celebramos la muerte de Jesús con una cena, cada año la fecha puede variar dependiendo del calendario arameo.</h4>
+<center><img src="imagenes/logo4.jpg" width="50%" height="50%"></center>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Luis Jesús Morales Juárez</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Atlixco</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Atlixco</h2></div>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Semana Santa en Atlixco</h1>
+  <div>
+  
+  <br>
+  </div>
+  <div>
+  <center><img src="imagenes/a.jpg" width="54%" height="30%"></center>
+  <p>Una de las procesiones de Viernes Santo que más acapara la atención es la registrada en Atlixco con la presencia de los Engrillados, personas que encadenadas recorren las calles de referido municipio, las cuales portan coronas de espinas, así como púas o puntas que se colocan en distintas partes del cuerpo, principalmente en hombros y pies. </p>
+  
+  <center>
+    <p><img src="imagenes/aa.jpg" width="50%" height="30%"></p>
+    <p>Se puede observar gente disfrzada par a la representacion</p>
+  </center>
+  <center>
+    <p><img src="imagenes/aaa.jpg" width="50%" height="26%"></p>
+    <p>A los Engrillados</p>
+  </center>
+  <center>
+    <p><img src="imagenes/aaaa.jpg" width="58%" height="32%"></p>
+    <p>Y el tapete monumental que se hace en el Zócalo de la ciudad</p>
+  </center>
+  <center><img src="imagenes/aaaaa.jpg" width="50%" height="50%"></center>
+  </div>
+  </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Luis Jesús Morales Juárez</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Semana Santa en Puebla</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Semana Santa En Puebla</h2>
+ <h3>La celebración de Semana Santa es para los poblanos una de las conmemoraciones más importantes del año cristiano; durante estos días aquellas personas que profesan alguna de las diferentes confesiones de la fe cristiana acuden a las iglesias más emblemáticas de Puebla para recordar la Pasión, Muerte y Resurrección de Jesús de Nazaret.</h3>
+ <img src="imagenes/sww.jpg" width="70%" height="50%">
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Luis Jesús Morales Juárez</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>San Luis Potosí</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+  <center><h1> San Luis Potosi </h1></center>
+
+  <h3>En San Luis Potosi, se llevan acabo en Semana Santa diferente representaciones como el Via Crucis y la Procesion del Silencio</h3>
+  <center>
+  <h2>Procesión del Silencio</h2>
+  </center>
+  <p>La cuidad se convierte en una iglesia: sus lados flanqueados por centenarios templos barrocos y por bóveda un gran cielo limpio y estrellado que ilumina el recorrido y acoge a los fervientes espectadores.</p>
+  <center>
+   <img src ="imagenes/Procesion-Silencio2.jpg" width="60%" height="40%">
+   </center>
+  <center><h2>Vía Crucis</h2></center>
+  <P>El principal motivo de esta manifestación de fe es la pasión y muerte de cristo, a través de un Vía Crucis y los misterios Dolorosos del Rosario. Cuadro representa con una imagen llevada en pesadas plataformas de madera por los cofrades, que portan vestimentas con colores alusivos a la parroquia que pertenecen.</P>
+   <center>
+   <img src ="imagenes/semana22feb.jpg" width="60%" height="40%">
+   </center>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Luis Jesús Morales Juárez</h4>
+  </div>
+  </div>
+  </div>
+  
+   <div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Guererro</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+  <center><h1>Guererro</h1>
+  <p></p>
+  <center>
+  <img src ="imagenes/taxco-animas-5.jpg" width="70%" height="50%">
+  </center>
+  <h3>Procesion de las Animas (Taxco)</h3>
+  <p>En este este Pueblo Mágico guerrerense se llevan a cabo procesiones en las cuales sus habitantes dan muestra de su fe a través de sacrificios simbólicos, y hasta físicos, para expiar alguna culpa o simplemente para ofrendar su sufrimiento a quien consideran su salvador. Por las calles empedradas desfilan las dramáticas procesiones acompañadas por imágenes religiosas que testifican el sacrificio de penitentes encapuchados, vestidos de negro que arrastran cadenas sujetas a sus tobillos a manera de sacrificio.</p>
+<center>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Luis Jesús Morales Juárez</h4>
+  </div>
+  </div>
+  </div>
+   <div data-role="page" id="Pagina11" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Oaxaca</h1>
+  </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Oaxaca</h2></div>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Semana Santa en Oaxaca</h1>
+  <div>
+  
+  <br>
+  </div>
+  <div>
+  <h1>Oaxaca</h1>
+  <p>El Primer Viernes de Cuaresma la Festividad del Señor de Las Misericordias en el Templo de San Juan de Dios, el Segundo Viernes de Cuaresma la Festividad del Señor de Las Maravillas en el Templo de La Defensa , el Cuarto Viernes de Cuaresma la Festividad de la Samaritana en la Ciudad de Oaxaca, el Quinto Viernes de Cuaresma la festividad del Señor de las Peñas en el Templo del Carmen Alto y la Festividad del Señor San Lázaro en la Villa de San Antonino Castillo Velasco. </p>
+  
+  <center>
+    <p><img src="imagenes/57.jpg" width="70%" height="50%"></p>
+    <H3>Procesion del Silencion en Oaxaca</H3>
+    <p>Es una procesión de carácter luctuoso en el cual se le da el pésame a la Virgen Morena. Su característica principal es que tantos los participantes como los espectadores mantienen silencio al paso de las imágenes de la procesión. Así se demuestra el respeto a la muerte de Jesús. La procesión pasa por las calles muy importantes de la ciudad: Andador Turístico, Xolotl, García Vigil, Morelos y termina en la iglesia de la Sangre de Cristo, todo el recorrido es hecho con un orden programado.</p>
+  </center>
+  
+</div>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Luis Jesús Morales Juárez</h4>
+ </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Iztapalapa</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+  <center><h2>Iztapalapa</h2></center>
+  <center><h3>Los Festejos de Semana Santa de Iztapalapa son Patrimonio Cultural Intangible de la Ciudad de México.</h3>
+  <center>
+   <img src ="imagenes/6.jpg" width="50%" height="40%">
+   </center>
+  <h3>Desde 1843 en el Cerro de la Estrella o Huizachtepetl se conmemora la Pasión de Cristo. Diez años atrás, en 1833, los pobladores afectados y preocupados por la epidemia que azolaba a su comunidad. A los pocos días, la mortandad por el cólera cesó. Además del milagro de haber parado la epidemia, en San Lorenzo, uno de los pueblos de Iztapalapa, el Cristo invocado los favoreció con un agua milagrosa, pues del pie de un ahuehuete brotó un manantial y con el agua que de ahí emano curaron a los enfermos y a la gente de los pueblos del sur.</h3></center>
+</div>
+</div>
+  <div data-role="footer" data-theme="a">
+  <h4>Luis Jesús Morales Juárez</h4>
+ </div>
+</div>
+</div>
+
+ 
+ </div>
+ </div>
+ </div>
+
+ </body>
+ </html>
